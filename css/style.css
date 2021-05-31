@@ -19,17 +19,15 @@ body {
     margin: 0 auto;
 }
 
-.row .card {
-    width: calc(100% / 4 - 20px);
-    height: 100%;
-    display: inline-block;
-    border: 3px solid black;
-    z-index: 2;
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-img {
-    width: 100%;
-    height: 100%;
+.visibility img,
+h3 {
+    visibility: hidden;
 }
 
 
@@ -37,7 +35,7 @@ img {
 
 header h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 100px;
     color: white;
     padding-top: 10px;
     padding-bottom: 50px;
@@ -47,26 +45,48 @@ header h1 {
 /* main */
 
 .row {
-    height: 500px;
+    width: 100%;
+}
+
+.card {
+    width: calc(25% - 15px);
+    height: 300px;
+    background-image: url(../img/pattern.png);
+    background-size: cover;
+    float: left;
+    border-radius: 5%;
+    border: 1px solid black;
+    margin-right: 10px;
     position: relative;
-    margin-bottom: 40px;
 }
 
+.card :hover img {
+    visibility: visible;
+}
 
-/* .row .card:hover {
-    content: url(../img/noun_air_balloon_3134741.png);
-    background-color: white;
-    background-position: center;
-} */
-
-span {
+.card :hover h3 {
+    visibility: visible;
+    color: violet;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
+    bottom: 10%;
+    left: 20%;
+    font-size: 40px;
 }
 
-.row .card :active {
-    content: url(../img/noun_air_balloon_3134741.png);
+.card :hover {
     background-color: white;
+    border-radius: 5%;
+}
+
+.visibility img {
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+
+.visibility {
+    width: 100%;
+    height: 100%;
 }
