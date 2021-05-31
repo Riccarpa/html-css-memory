@@ -61,8 +61,14 @@ header h1 {
     position: relative;
 }
 
-.row div :last-child {
-    margin-right: 0;
+.visibility {
+    width: 100%;
+    height: 100%;
+}
+
+.card :hover {
+    background-color: white;
+    border-radius: 5%;
 }
 
 .card :hover img {
@@ -81,16 +87,6 @@ header h1 {
     bottom: 10%;
     left: 20%;
     font-size: 40px;
-}
-
-.card :hover {
-    background-color: white;
-    border-radius: 5%;
-}
-
-.visibility {
-    width: 100%;
-    height: 100%;
 }
 
 .upface {
