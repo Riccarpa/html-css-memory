@@ -46,6 +46,7 @@ header h1 {
 
 .row {
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .card {
@@ -62,6 +63,11 @@ header h1 {
 
 .card :hover img {
     visibility: visible;
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    left: 10%;
+    top: 5%;
 }
 
 .card :hover h3 {
@@ -76,14 +82,6 @@ header h1 {
 .card :hover {
     background-color: white;
     border-radius: 5%;
-}
-
-.visibility img {
-    width: 80%;
-    height: 60%;
-    position: absolute;
-    left: 10%;
-    top: 5%;
 }
 
 .visibility {
